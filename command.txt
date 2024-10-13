@@ -1,0 +1,12 @@
+login docker hub
+npm install
+npm run dev
+npm run build
+npx serve -s dist
+npm i serve //กรณีที่ npx serve -s dist ไม่ได้
+docker login
+docker build -t rujanatruja/react-docker-test3:0.1 .
+docker run -d -p 3000:3000 --name react-docker rujanatruja/react-docker-test3:0.1
+docker ps
+docker stop react-docker
+docker rm react-docker 
